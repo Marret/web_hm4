@@ -1,0 +1,19 @@
+CREATE TABLE EMPLOYEE (
+  Id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  addres TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Иван', '18', 'Москва');
+INSERT INTO EMPLOYEE VALUES (0002, 'Петр', '22', 'Санкт-Петербург');
+INSERT INTO EMPLOYEE VALUES (0003, 'Анна', '35', 'Вологда');
+INSERT INTO EMPLOYEE VALUES (0004, 'Юлия', '18', 'Самара');
+INSERT INTO EMPLOYEE VALUES (0005, 'Николай', '36','Тверь');
+
+-- fetch 
+
+SELECT *FROM EMPLOYEE;
+SELECT * FROM EMPLOYEE WHERE addres = 'Москва';
+SELECT COUNT(*) as count FROM EMPLOYEE WHERE age > 18;
